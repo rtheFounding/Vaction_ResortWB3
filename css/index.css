@@ -1,10 +1,8 @@
-#main_top {
-    background-image:url('images/backgroundimg.jpg');
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-attachment:fixed;
-    height: 700px;
- }
+.image{
+   width: 100%;
+   height: auto;
+   height: 40em;
+}
  .container p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 125%;

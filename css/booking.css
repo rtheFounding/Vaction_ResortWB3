@@ -1,9 +1,7 @@
-#main_top {
-    background-image:url('images/Queen-Room.jpg');
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-attachment:fixed;
-    height: 700px;
+.image{
+    width: 100%;
+    height: auto;
+    height: 40em;
  }
  .row {
     border-style: solid;
