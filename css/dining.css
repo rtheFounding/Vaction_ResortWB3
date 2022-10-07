@@ -54,7 +54,7 @@ input[type='radio'] {
     text-decoration: underline;
 }
 form {
-    vertical-align: center;
+    text-align: left;
 }
 .container table, th, td {
     border: 1px solid black;
