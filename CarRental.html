@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="css/carRental.css">
+    <title>Car Rental</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg py-3 navbar-light shadow-sm" style="background-color: #e3f2fd">
+            <!--The .navbar class is used to create a navigation bar. The navbar can extend or collapse, depending on the device size ie, the navbar is used to create the responsive design by using .navbar-expand-xl|lg|md|sm class.
+           So, It provides flexibility to the web page.-->
+            <div class="container-fluid">
+                <!--.container-fluid: The .container-fluid class provides a full-width container which spans the entire width of the viewport. while the .container responsive fixed width container.-->
+                <a href="index.html" class="navbar-brand">
+                    <!--navbar-brand class is applied to brand a logo on the navigation bar-->
+                    <!-- Logo Image -->
+                    <img src="images/resortlogo.jpg" width="45" alt="" class="d-inline-block align-middle mr-2">
+                    <!--one common use for display: inline-block is to display list items horizontally instead of vertically.
+              By default, list items are displayed vertically. In this example we use display: inline-block to display them horizontally (side by side).-->
+                    <!-- Logo Text -->
+                    <span class="text-uppercase font-weight-bold">Traveler Hotel</span>
+                </a>
+
+                <ul class="navbar-nav">
+                    <!--mx-auto class for horizontally centering -->
+                    <li class="nav-item active"><a class="nav-link" href="index.html" class="nav-link">Home</a></li>
+                    <!--it can apply an active style to the link if it is active.-->
+                    <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dining.html">Dining</a></li>
+                    <li class="nav-item"><a class="nav-link" href="CarRental.html">Car Rental</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Activities</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <img class="image" src="images/car-grab.jpg">
+    <div class="container mx-auto">
+        <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+            <div class="card-body p-4 p-md-5">
+                <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Traveler Hotel Car Rental</h3>
+                <form>
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+
+                            <div class="form-outline">
+                                <p>Pickup Date:<input class="form-control form-control-lg" type="date" id="pickUpDate">
+                                </p>
+                                <p>Number of days:<input class="form-control form-control-lg" type="text"
+                                        id="numOfDays"></p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+
+                            <div class="form-outline">
+                                <div>Options</div>
+                                <label for="tollTag"><input type="checkbox" name="tollTag" id="tollTag" checked>
+                                    Electronic Toll Tag ($3.95/day plus tolls)</label><br>
+                                <label for="gps"><input type="checkbox" name="gps" id="gps">
+                                    GPS ($4.95/day)</label><br>
+                                <label for="roadside"><input type="checkbox" name="roadside" id="roadside">
+                                    Roadside Assistance ($2.95/day)</label><br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+
+                            <h6 class="mb-2 pb-1">Under 25: </h6>
+
+                            <div class="form-check form-check-inline">
+                                <input type="radio" id="No" name="checkone" value="No">
+                                <label for="No">No</label>
+                            </div>
+
+                            <div class="form-check form-check-inline">
+                                <input type="radio" id="Yes" name="checkone" value="Yes">
+                                <label for="Yes">Yes</label>
+                            </div>
+                        </div>
+                        <div class="mt-4 pt-2">
+                            <button class="btn btn-primary btn-lg" type="button" id="calculateBtn">Estimate Total Cost</button>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-6 mb-4 pb-2">
+                                <p>Car Rental: $<input id="rentalAmount" class="form-control form-control-lg">
+                                </p>
+                                <p>Options: $<input class="form-control form-control-lg" id="userOptions"></p>
+                                <p>Under 25 surcharge: $<input id="userChecked"
+                                        class="form-control form-control-lg">
+                                </p>
+                                <p>Total Due: $<input id="totalAmount" class="form-control form-control-lg" readonly>
+                                </p>
+                            </div>
+                        </div>
+                </form>
+            </div>
+        </div>
+        <div class="footer-clean">
+            <footer>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-4 col-md-3 item">
+                            <h3>Services</h3>
+                            <ul>
+                                <li><a href="dining.html">Dining</a></li>
+                                <li><a href="booking.html">Booking</a></li>
+                                <li><a href="#">Car Rental</a></li>
+                                <li><a href="#">Activities</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 col-md-3 item">
+                            <h3>Contact Us</h3>
+                            <ul>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Customer Support</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a
+                                href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i
+                                    class="icon ion-social-snapchat"></i></a><a href="#"><i
+                                    class="icon ion-social-instagram"></i></a>
+                            <p class="copyright">© 2022 Traveler Hotel</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+
+        <script src="scripts/carRental.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
