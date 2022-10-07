@@ -1,0 +1,71 @@
+.image {
+    width: 100%;
+    height: auto;
+    height: 40em;
+}
+
+.container {
+    padding-top: 30px;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: rgb(5, 5, 5);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.card button:hover {
+    opacity: 0.7;
+}
+
+.card:hover {
+    background-color: rgb(224, 220, 220);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transform: scale(1.03);
+
+}
+
+.gradient-custom {
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to bottom right, rgb(252, 252, 252), rgb(116, 110, 110))
+}
+
+input[type='radio'] {
+    width: 30px;
+    height: 30px;
+
+}
+
+.container p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 125%;
+    margin: 20px;
+}
+.container h1 {
+    margin: 20px;
+    text-align: center;
+    text-decoration: underline;
+}
+form {
+    text-align: center;
+}
+.container table, th, td {
+    border: 1px solid black;
+}
+.container table {
+    width: 100%;
+}
+.container th {
+    height: 70px;
+    background-color: rgb(182, 179, 179);
+}
+.container td {
+    height: 40px;
+}
