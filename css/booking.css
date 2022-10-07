@@ -1,21 +1,12 @@
 .image{
-    width: 100%;
-    height: auto;
-    height: 40em;
- }
- .row {
-    border-style: solid;
+   width: 100%;
+   height: auto;
+   height: 40em;
 }
 .boxes {
     width: fit-content;
 }
-table {
-    margin-left: auto;
-    margin-right: auto;
-}
-.output td{
-    text-align: right;
-}
+
 #message {
     color: red;
     margin: 1em;
@@ -27,4 +18,22 @@ table {
     width: auto;
     display: inline-block;
     margin: 10px;
+}
+.kingBed {
+    height: 25em;
+    float: left;
+    margin-top: 10px;
+}
+.twoBed {
+    height: 25em;
+    max-height: 25em;
+    float: right;
+    margin-top: 10px;
+    width: 38em;
+}
+.container {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    max-height: 25em;
 }
